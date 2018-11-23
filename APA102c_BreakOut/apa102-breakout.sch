@@ -3335,7 +3335,7 @@ Datasheet: https://cdn-shop.adafruit.com/product-files/2343/APA102C.pdf</descrip
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="pwr" width="0.3048" drill="0">
+<class number="1" name="pwr" width="0.4064" drill="0">
 </class>
 </classes>
 <parts>
