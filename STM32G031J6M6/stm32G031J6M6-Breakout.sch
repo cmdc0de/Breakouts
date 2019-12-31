@@ -4505,11 +4505,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </classes>
 <parts>
 <part name="U$1" library="ICs" deviceset="STM32G031" device="S08N" package3d_urn="urn:adsk.eagle:package:16126582/1"/>
-<part name="C1" library="passives" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:8118586/1" value="4.7 uF"/>
-<part name="C2" library="passives" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:8118586/1" value="0.1 uF"/>
+<part name="C1" library="passives" deviceset="C-US" device="C0805K" package3d_urn="urn:adsk.eagle:package:8089589/1" value="4.7 uF"/>
+<part name="C2" library="passives" deviceset="C-US" device="C0805K" package3d_urn="urn:adsk.eagle:package:8089589/1" value="0.1 uF"/>
 <part name="IC1" library="voltage-regulator" deviceset="LDL112D33R" device=""/>
 <part name="S1" library="switches" deviceset="MSS3-V-T_R" device=""/>
-<part name="C3" library="passives" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:8118586/1" value="10 uF"/>
+<part name="C3" library="passives" deviceset="C-US" device="C0805K" package3d_urn="urn:adsk.eagle:package:8089589/1" value="10 uF"/>
 <part name="J1" library="connector" deviceset="M08X2" device=""/>
 <part name="R1" library="passives" deviceset="RESISTOR" device="1206" value="56 R"/>
 <part name="R2" library="passives" deviceset="RESISTOR" device="1206" value="56 R"/>
@@ -4520,7 +4520,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R8" library="passives" deviceset="RESISTOR" device="1206" value="56 R"/>
 <part name="R9" library="passives" deviceset="RESISTOR" device="1206" value="56 R"/>
 <part name="U$2" library="switches" deviceset="SWITCH_TACTILE" device="TACTILE-2PIN-NARROW"/>
-<part name="C4" library="passives" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:8118586/1" value="0.1 uF"/>
+<part name="C4" library="passives" deviceset="C-US" device="C0805K" package3d_urn="urn:adsk.eagle:package:8089589/1" value="0.1 uF"/>
 <part name="LED1" library="leds" deviceset="LED" device="1206"/>
 <part name="LED2" library="leds" deviceset="LED" device="1206"/>
 <part name="LED3" library="leds" deviceset="LED" device="1206"/>
