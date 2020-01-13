@@ -1,0 +1,64 @@
+Configuration	example2
+STM32CubeMX 	5.4.0
+Date	01/11/2020
+MCU	STM32G031J6Mx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	Serial Wire	SYS_SWCLK	PA14-BOOT0
+SYS	Serial Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Output Compare No Output	TIM1_VS_no_output5	VP_TIM1_VS_no_output5
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PC14-OSC32_IN (PC14)	GPIO_Output	
+4	PF2 - NRST	GPIO_Output	
+5	PB0	GPIO_Output	
+6	PA12 [PA10]	GPIO_Output	
+7	PA13	SYS_SWDIO	
+8	PA14-BOOT0	SYS_SWCLK	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	Serial Wire	SYS_SWCLK	PA14-BOOT0
+SYS	Serial Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Output Compare No Output	TIM1_VS_no_output5	VP_TIM1_VS_no_output5
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PC14-OSC32_IN (PC14)	GPIO_Output	
+4	PF2 - NRST	GPIO_Output	
+5	PB0	GPIO_Output	
+6	PA12 [PA10]	GPIO_Output	
+7	PA13	SYS_SWDIO	
+8	PA14-BOOT0	SYS_SWCLK	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : example2
+Project Folder : E:\MyStuff\dev\hardware\Breakouts\STM32G031J6M6\firmware\example2
+Toolchain / IDE : SW4STM32
+Firmware Package Name and Version : STM32Cube FW_G0 V1.3.0
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
