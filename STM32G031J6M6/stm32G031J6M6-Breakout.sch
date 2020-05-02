@@ -4424,9 +4424,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="VALUE" x="48.26" y="2.54" size="1.778" layer="96"/>
 <attribute name="NAME" x="48.26" y="29.21" size="1.778" layer="95"/>
 </instance>
-<instance part="R1" gate="G$1" x="134.62" y="35.56" smashed="yes">
-<attribute name="NAME" x="130.81" y="37.0586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.81" y="32.258" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="144.78" y="35.56" smashed="yes">
+<attribute name="NAME" x="140.97" y="37.0586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="32.258" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="5.08" y="25.4" smashed="yes">
 <attribute name="NAME" x="1.27" y="26.8986" size="1.778" layer="95"/>
@@ -4476,9 +4476,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="NAME" x="-29.972" y="9.144" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-29.972" y="6.985" size="1.778" layer="96"/>
 </instance>
-<instance part="LED7" gate="G$1" x="144.78" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="149.352" y="39.116" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="149.352" y="41.275" size="1.778" layer="96" rot="R180"/>
+<instance part="LED7" gate="G$1" x="154.94" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="159.512" y="39.116" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="159.512" y="41.275" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="J2" gate="G$1" x="172.72" y="30.48" smashed="yes" rot="R270">
 <attribute name="VALUE" x="167.64" y="33.02" size="1.778" layer="96" rot="R270"/>
@@ -4666,6 +4666,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="175.26" y1="22.86" x2="175.26" y2="20.32" width="0.1524" layer="91"/>
 <label x="177.8" y="20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED7" gate="G$1" pin="C"/>
+<wire x1="160.02" y1="35.56" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
+<label x="160.02" y="30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -4698,8 +4703,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="35.56" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
-<label x="124.46" y="35.56" size="1.778" layer="95"/>
+<wire x1="139.7" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
+<label x="134.62" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4790,14 +4795,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED7" gate="G$1" pin="A"/>
-<wire x1="142.24" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="LED7" gate="G$1" pin="C"/>
+<wire x1="152.4" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="EN"/>
 <wire x1="149.86" y1="35.56" x2="149.86" y2="45.72" width="0.1524" layer="91"/>
+<junction x="149.86" y="35.56"/>
 </segment>
 </net>
 </nets>
