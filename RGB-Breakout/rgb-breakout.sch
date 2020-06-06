@@ -186,33 +186,22 @@
 <libraries>
 <library name="leds">
 <packages>
-<package name="DIODFN160X160X120-4N" urn="urn:adsk.eagle:footprint:19572771/1">
+<package name="1.6X1.6-RGB">
 <description>DFN4, 1.60 X 1.60 X 1.20 mm body
 &lt;p&gt;DFN4 package with body size 1.60 X 1.60 X 1.20 mm&lt;/p&gt;</description>
-<circle x="-1.579" y="0.425" radius="0.25" width="0" layer="21"/>
-<wire x1="0.8" y1="0.9152" x2="-0.8" y2="0.9152" width="0.12" layer="21"/>
-<wire x1="0.8" y1="-0.9152" x2="-0.8" y2="-0.9152" width="0.12" layer="21"/>
+<circle x="1.469" y="-0.591" radius="0.127" width="0" layer="21"/>
 <wire x1="0.8" y1="-0.8" x2="-0.8" y2="-0.8" width="0.12" layer="51"/>
 <wire x1="-0.8" y1="-0.8" x2="-0.8" y2="0.8" width="0.12" layer="51"/>
 <wire x1="-0.8" y1="0.8" x2="0.8" y2="0.8" width="0.12" layer="51"/>
 <wire x1="0.8" y1="0.8" x2="0.8" y2="-0.8" width="0.12" layer="51"/>
-<smd name="1" x="-0.6201" y="0.425" dx="0.9098" dy="0.3525" layer="1"/>
+<smd name="3" x="-0.6201" y="0.425" dx="0.9098" dy="0.3525" layer="1"/>
 <smd name="2" x="-0.6201" y="-0.425" dx="0.9098" dy="0.3525" layer="1"/>
-<smd name="3" x="0.6201" y="-0.425" dx="0.9098" dy="0.3525" layer="1"/>
+<smd name="1" x="0.6201" y="-0.425" dx="0.9098" dy="0.3525" layer="1"/>
 <smd name="4" x="0.6201" y="0.425" dx="0.9098" dy="0.3525" layer="1"/>
-<text x="0" y="1.5502" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.5502" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="1.5502" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.5502" size="0.6096" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="DIODFN160X160X120-4N" urn="urn:adsk.eagle:package:19572740/1" type="model">
-<description>DFN4, 1.60 X 1.60 X 1.20 mm body
-&lt;p&gt;DFN4 package with body size 1.60 X 1.60 X 1.20 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="DIODFN160X160X120-4N"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="XZCMEDGCBD110W-RGB">
 <pin name="VCC" x="-12.7" y="2.54" length="middle" direction="pwr"/>
@@ -227,16 +216,13 @@
 <gate name="G$1" symbol="XZCMEDGCBD110W-RGB" x="0" y="0"/>
 </gates>
 <devices>
-<device name="XZCMEDGCBD110W-RGB" package="DIODFN160X160X120-4N">
+<device name="" package="1.6X1.6-RGB">
 <connects>
 <connect gate="G$1" pin="BLUE" pad="4"/>
 <connect gate="G$1" pin="GREEN" pad="3"/>
 <connect gate="G$1" pin="RED" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19572740/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -935,7 +921,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="U$1" library="leds" deviceset="XZCMEDGCBD110W-RGB" device="XZCMEDGCBD110W-RGB" package3d_urn="urn:adsk.eagle:package:19572740/1"/>
+<part name="U$1" library="leds" deviceset="XZCMEDGCBD110W-RGB" device=""/>
 <part name="J1" library="connector" deviceset="M04" device="LONGPADS"/>
 </parts>
 <sheets>
@@ -983,9 +969,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="48.26" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="20.32" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
-<label x="22.86" y="53.34" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+<label x="22.86" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RED" class="0">
@@ -995,9 +981,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="48.26" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
-<label x="22.86" y="48.26" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="20.32" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
+<label x="22.86" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -1005,16 +991,4 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
