@@ -1,0 +1,7 @@
+Partlist exported from E:/MyStuff/dev/hardware/Breakouts/Single-APA102c-Breakout/single-apa102c.sch at 10/24/2020 12:22 PM
+
+Qty Value      Device     Package     Parts Description                          PROD_ID   
+1              M02PTH     1X02        J2    Standard 2-pin 0.1" header. Use with           
+1              M04PTH     1X04        J1    Header 4                             CONN-09696
+1   15 pF      C-USC0805K C0805K      C1    CAPACITOR, American symbol                     
+1   APA1025050 APA1025050 APA102_5050 U$1   APA102C 5050 RGB LED                           
