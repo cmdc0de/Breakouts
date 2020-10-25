@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2020-10-24T19:56:17Z",
+        "CreationDate": "2020-10-25T07:13:56Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -17,7 +17,7 @@
         },
         "Owner": "Demetrius Comes <demetrius@demetriuscomes.com>",
         "Size": {
-            "X": 13.257,
+            "X": 13.892,
             "Y": 10.476
         }
     }
