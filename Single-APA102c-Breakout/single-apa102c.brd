@@ -184,11 +184,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.762" y1="0" x2="13.892" y2="0" width="0" layer="20"/>
+<wire x1="0.375" y1="0" x2="13.892" y2="0" width="0" layer="20"/>
 <wire x1="13.892" y1="0" x2="13.892" y2="10.476" width="0" layer="20"/>
 <wire x1="13.892" y1="10.476" x2="0" y2="10.476" width="0" layer="20"/>
-<wire x1="0" y1="10.476" x2="0" y2="0.762" width="0" layer="20"/>
-<wire x1="0.762" y1="0" x2="0" y2="0.762" width="0" layer="20"/>
+<wire x1="0" y1="10.476" x2="0" y2="0.375" width="0" layer="20"/>
+<wire x1="0.375" y1="0" x2="0" y2="0.375" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="passives">
@@ -253,28 +253,6 @@ Metric Code Size 2012</description>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-<package name="1X02">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
@@ -544,28 +522,35 @@ Metric Code Size 2012</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="OthermillDRC_1_64_v2">
-<description language="en">&lt;b&gt;Othermill EAGLE Design Rules v2&lt;/b&gt;&lt;p&gt;DRC for Othermill, 1/64&quot; tool&lt;/p&gt;&lt;b&gt;-- Rules --&lt;/b&gt;&lt;li&gt;8 mil traces&lt;/li&gt;&lt;li&gt;15.7mil clearance&lt;/li&gt;</description>
+<designrules name="oshpark-2layer">
+<description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
+&lt;p&gt;
+Please make sure your boards conform to these design rules.
+&lt;/p&gt;
+&lt;p&gt;
+Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
+&lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
+&lt;/p&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="0.39878125mm"/>
-<param name="mdWirePad" value="0.39878125mm"/>
-<param name="mdWireVia" value="0.39878125mm"/>
-<param name="mdPadPad" value="0.39878125mm"/>
-<param name="mdPadVia" value="0.39878125mm"/>
-<param name="mdViaVia" value="0.39878125mm"/>
-<param name="mdSmdPad" value="0mil"/>
-<param name="mdSmdVia" value="0mil"/>
-<param name="mdSmdSmd" value="0mil"/>
+<param name="mtCopper" value="0.035559375mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.035559375mm"/>
+<param name="mtIsolate" value="1.6mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="0mil"/>
-<param name="mdDrill" value="1mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="16mil"/>
-<param name="msDrill" value="31mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="10mil"/>
+<param name="msMicroVia" value="10mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -574,35 +559,35 @@ Metric Code Size 2012</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="0mil"/>
-<param name="rlMaxPadTop" value="9999mil"/>
-<param name="rlMinPadInner" value="0mil"/>
-<param name="rlMaxPadInner" value="9999mil"/>
-<param name="rlMinPadBottom" value="0mil"/>
-<param name="rlMaxPadBottom" value="9999mil"/>
-<param name="rlMinViaOuter" value="15mil"/>
-<param name="rlMaxViaOuter" value="25mil"/>
-<param name="rlMinViaInner" value="8mil"/>
-<param name="rlMaxViaInner" value="25mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMinPadTop" value="5mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="5mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="5mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="5mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="5mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="5mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMinMicroViaInner" value="5mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
-<param name="psElongationLong" value="50"/>
+<param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
-<param name="mvStopFrame" value="0.05"/>
-<param name="mvCreamFrame" value="0.05"/>
-<param name="mlMinStopFrame" value="1mil"/>
-<param name="mlMaxStopFrame" value="2mil"/>
-<param name="mlMinCreamFrame" value="2mil"/>
-<param name="mlMaxCreamFrame" value="10mil"/>
-<param name="mlViaStopLimit" value="30mil"/>
-<param name="srRoundness" value="0.1"/>
-<param name="srMinRoundness" value="2mil"/>
-<param name="srMaxRoundness" value="10mil"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="2.5mil"/>
+<param name="mlMaxStopFrame" value="2.5mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
 <param name="slThermalIsolate" value="10mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
@@ -715,58 +700,58 @@ Metric Code Size 2012</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="passives" package="C0805K" package3d_urn="urn:adsk.eagle:package:8089589/1" value="15 pF" x="5.08" y="2.794" smashed="yes" rot="R135">
-<attribute name="NAME" x="5.168390625" y="1.468175" size="0.4064" layer="25" rot="R135"/>
-<attribute name="VALUE" x="5.873375" y="3.969209375" size="0.4064" layer="27" rot="R135"/>
+<element name="C1" library="passives" package="C0805K" package3d_urn="urn:adsk.eagle:package:8089589/1" value="15 pF" x="4.445" y="2.413" smashed="yes" rot="R135">
+<attribute name="NAME" x="4.533390625" y="1.087175" size="0.4064" layer="25" rot="R135"/>
+<attribute name="VALUE" x="5.238375" y="3.588209375" size="0.4064" layer="27" rot="R135"/>
 </element>
 <element name="J1" library="connector" package="1X04" value="" x="1.397" y="1.397" smashed="yes" rot="R90">
 <attribute name="NAME" x="-0.0508" y="2.4638" size="0.4064" layer="25" ratio="10" rot="R90"/>
 <attribute name="PROD_ID" value="CONN-09696" x="11.557" y="24.257" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="4.572" y="0.127" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="J2" library="connector" package="1X02" value="" x="12.573" y="8.255" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.4968" y="4.0132" size="0.4064" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="9.398" y="9.525" size="1.27" layer="27" rot="R270"/>
-</element>
 <element name="U$1" library="leds" package="APA102_5050" package3d_urn="urn:adsk.eagle:package:15294973/2" value="APA1025050" x="7.008" y="6" smashed="yes" rot="R315">
 <attribute name="NAME" x="9.37680625" y="8.368809375" size="0.4064" layer="25" font="vector" rot="R135" align="bottom-center"/>
 </element>
 <element name="U$2" library="logos" package="CMD_C0DE_LOGO_TOP_COPPER" value="CMD_C0DE_LOGOCMD_CODE_LOGO_TOP_COPPER" x="7.112" y="5.715" smashed="yes" rot="MR0"/>
+<element name="J2" library="connector" package="1X04" value="" x="12.5" y="9.017" smashed="yes" rot="R270">
+<attribute name="NAME" x="14.3288" y="10.3632" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="PROD_ID" value="CONN-09696" x="12.5" y="9.017" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="9.325" y="10.287" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
 <contactref element="U$1" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="J1" pad="1"/>
-<wire x1="1.397" y1="1.397" x2="5.097215625" y2="1.397" width="0.8128" layer="1"/>
-<wire x1="5.097215625" y1="1.397" x2="5.78710625" y2="2.086890625" width="0.8128" layer="1"/>
-<wire x1="5.78710625" y1="2.086890625" x2="7.08391875" y2="3.383703125" width="0.8128" layer="1"/>
 <wire x1="7.08391875" y1="3.383703125" x2="7.22013125" y2="3.383703125" width="0.8128" layer="1"/>
+<contactref element="J2" pad="4"/>
+<wire x1="1.397" y1="1.397" x2="4.843215625" y2="1.397" width="0.6096" layer="1"/>
+<wire x1="4.843215625" y1="1.397" x2="5.15210625" y2="1.705890625" width="0.6096" layer="1"/>
+<wire x1="5.15210625" y1="1.705890625" x2="5.40610625" y2="1.705890625" width="0.6096" layer="1"/>
+<wire x1="5.40610625" y1="1.705890625" x2="7.08391875" y2="3.383703125" width="0.6096" layer="1"/>
+<wire x1="5.15210625" y1="1.705890625" x2="5.660109375" y2="1.705890625" width="0.6096" layer="1"/>
+<wire x1="5.660109375" y1="1.705890625" x2="5.969" y2="1.397" width="0.6096" layer="1"/>
+<wire x1="5.969" y1="1.397" x2="12.5" y2="1.397" width="0.6096" layer="1"/>
 </signal>
 <signal name="GND">
-<contactref element="U$1" pad="6"/>
-<contactref element="C1" pad="2"/>
 <contactref element="J1" pad="2"/>
-<wire x1="1.397" y1="3.937" x2="3.936996875" y2="3.937" width="0.8128" layer="1"/>
-<wire x1="3.936996875" y1="3.937" x2="4.372890625" y2="3.50110625" width="0.8128" layer="1"/>
-<wire x1="4.372890625" y1="3.50110625" x2="4.372890625" y2="6.19331875" width="0.8128" layer="1"/>
-<wire x1="4.372890625" y1="6.19331875" x2="4.391703125" y2="6.21213125" width="0.8128" layer="1"/>
-</signal>
-<signal name="DATAOUT">
-<contactref element="U$1" pad="3"/>
-<contactref element="J2" pad="1"/>
-<wire x1="9.62429375" y1="5.787865625" x2="10.16" y2="6.323571875" width="0.6096" layer="1"/>
-<wire x1="10.16" y1="6.323571875" x2="10.16" y2="7.493" width="0.6096" layer="1"/>
-<wire x1="10.16" y1="7.493" x2="10.922" y2="8.255" width="0.6096" layer="1"/>
-<wire x1="10.922" y1="8.255" x2="12.573" y2="8.255" width="0.6096" layer="1"/>
-</signal>
-<signal name="CLKOUT">
-<contactref element="U$1" pad="2"/>
-<contactref element="J2" pad="2"/>
-<wire x1="8.4222125" y1="4.585784375" x2="9.705996875" y2="3.302" width="0.6096" layer="1"/>
-<wire x1="9.705996875" y1="3.302" x2="10.795" y2="3.302" width="0.6096" layer="1"/>
-<wire x1="10.795" y1="3.302" x2="12.573" y2="5.08" width="0.6096" layer="1"/>
-<wire x1="12.573" y1="5.08" x2="12.573" y2="5.715" width="0.6096" layer="1"/>
+<contactref element="C1" pad="2"/>
+<contactref element="U$1" pad="6"/>
+<contactref element="J2" pad="3"/>
+<polygon width="0.1524" layer="16" isolate="0.254">
+<vertex x="0" y="10.16"/>
+<vertex x="0" y="0"/>
+<vertex x="13.97" y="0"/>
+<vertex x="13.97" y="10.16"/>
+<vertex x="13.97" y="10.541"/>
+<vertex x="0.127" y="10.541"/>
+<vertex x="0" y="10.414"/>
+</polygon>
+<wire x1="1.397" y1="3.937" x2="2.920996875" y2="3.937" width="0.6096" layer="1"/>
+<wire x1="2.920996875" y1="3.937" x2="3.737890625" y2="3.12010625" width="0.6096" layer="1"/>
+<wire x1="3.737890625" y1="3.12010625" x2="3.737890625" y2="5.55831875" width="0.6096" layer="1"/>
+<wire x1="3.737890625" y1="5.55831875" x2="4.391703125" y2="6.21213125" width="0.6096" layer="1"/>
 </signal>
 <signal name="DATAIN">
 <contactref element="U$1" pad="4"/>
@@ -783,6 +768,22 @@ Metric Code Size 2012</description>
 <wire x1="3.683" y1="8.255" x2="4.752996875" y2="8.255" width="0.6096" layer="1"/>
 <wire x1="4.752996875" y1="8.255" x2="5.593784375" y2="7.4142125" width="0.6096" layer="1"/>
 <wire x1="2.159" y1="7.239" x2="2.667" y2="7.239" width="0.6096" layer="1"/>
+</signal>
+<signal name="DATAOUT">
+<contactref element="U$1" pad="3"/>
+<contactref element="J2" pad="1"/>
+<wire x1="9.62429375" y1="5.787865625" x2="9.62429375" y2="7.59229375" width="0.4064" layer="1"/>
+<wire x1="9.62429375" y1="7.59229375" x2="11.049" y2="9.017" width="0.4064" layer="1"/>
+<wire x1="11.049" y1="9.017" x2="12.5" y2="9.017" width="0.4064" layer="1"/>
+</signal>
+<signal name="CLKOUT">
+<contactref element="U$1" pad="2"/>
+<contactref element="J2" pad="2"/>
+<wire x1="8.4222125" y1="4.585784375" x2="9.197996875" y2="3.81" width="0.4064" layer="1"/>
+<wire x1="11.322290625" y1="5.22031875" x2="11.322290625" y2="5.226290625" width="0.4064" layer="1"/>
+<wire x1="11.322290625" y1="5.226290625" x2="12.5" y2="6.477" width="0.4064" layer="1"/>
+<wire x1="9.911971875" y1="3.81" x2="11.322290625" y2="5.22031875" width="0.4064" layer="1"/>
+<wire x1="9.197996875" y1="3.81" x2="9.911971875" y2="3.81" width="0.4064" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

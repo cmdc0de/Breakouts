@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2020-10-30T04:12:01Z",
+        "CreationDate": "2020-11-16T06:31:27Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -10,7 +10,7 @@
         "Part": "Single"
     },
     "Overall": {
-        "BoardThickness": 1.57,
+        "BoardThickness": 1.671119,
         "LayerNumber": 2,
         "Name": {
             "ProjectId": "single-apa102c"
